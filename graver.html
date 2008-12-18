@@ -1,0 +1,86 @@
+<HTML>
+<HEAD>
+<TITLE>4ti2 -- A software package for algebraic, geometric and combinatorial problems
+on linear spaces</TITLE>
+</HEAD>
+
+<BODY bgcolor = white>
+
+<center>
+<table border=0 width=90% cellspacing=5 cellpadding=5>
+<tr>
+  <th>
+    <font size=6>graver</font>
+  </th>
+</tr>
+</table>
+</center>
+
+This code computes the Graver basis of a matrix or a given lattice. 
+You must specify either a matrix or a lattice basis. If both exist,
+'graver' will choose the matrix as input.<p>
+
+<b>Usage</b>
+
+<pre>
+./graver [--options] foo
+</pre>
+<p>
+
+<b>Examples</b>
+
+<pre>
+./graver foo
+./graver --quiet foo
+</pre>
+<p>
+
+<b>Default behavior</b>
+
+<ul>
+<li> 'graver' always uses matrix file 'foo' as input if present. If you wish to
+use a given lattice basis as input, specify only the lattice generators in 'foo.lat'.
+</ul>
+<p>
+
+<table border=1 width=90% cellspacing=5 cellpadding=5>
+<tr>
+<th align=left>
+Option
+</th>
+<th align=left>
+Effect
+</th>
+</tr>
+<tr>
+<th align=left>
+--quiet
+</th>
+<th align=left>
+no output is written to the screen
+</th>
+</tr>
+</table>
+<p>
+
+<table border=1 width=90% cellspacing=5 cellpadding=5>
+<tr>
+<th align=left>
+Output file
+</th>
+<th align=left>
+Content
+</th>
+</tr>
+
+<tr>
+<th align=left>
+foo.gra
+</th>
+<th align=left>
+list of Graver basis elements
+</th>
+</tr>
+</table>
+
+</BODY>

@@ -1,0 +1,126 @@
+<HTML>
+<HEAD>
+<TITLE>4ti2 -- Computation of Hilbert bases, Graver bases, toric Gröbner bases, and more</TITLE>
+</HEAD>
+
+<BODY background="back.jpg"
+      bgcolor = "#EEEEFF"
+      TEXT=FFCC00
+      LINK=FFFFF
+      VLINK=#FFFCC
+      ALINK=#000066>
+
+<center>
+<table border=0 width=90% cellspacing=5 cellpadding=5>
+<tr>
+  <th>
+    <font size=6 color=red>4ti2 tutorial</font>
+  </th>
+</tr>
+</table>
+
+<table border=5 width=90% cellspacing=5 cellpadding=5>
+<tr>
+<th width=33%>
+<a href="tutorial_input.html">Input</a>
+</th>
+<th width=34%>
+<font color=red>Auxiliary functions</font>
+</th>
+<th width=33%>
+<a href="tutorial_output.html">Output management</a>
+</th>
+</tr>
+</table>
+
+<table border=5 width=90% cellspacing=5 cellpadding=5>
+<tr>
+<th width=20%>
+<a href="tutorial_hilbert.html">Hilbert bases</a>
+</th>
+<th width=20%>
+<a href="tutorial_graver.html">Graver bases</a>
+</th>
+<th width=20%>
+<a href="tutorial_groebner.html">Gröbner bases</a>
+</th>
+<th width=20%>
+<a href="tutorial_markov.html">Markov bases</a>
+</th>
+<th width=20%>
+<a href="tutorial_minimize.html">Minimization</a>
+</th>
+</tr>
+</table>
+
+
+
+<table border=5 width=90% cellspacing=5 cellpadding=5>
+<tr>
+<th align=left width=70%>
+Generate the matrix for a hierachical model. (See <a href="tutorial_input.html">Input</a> on how to specify the model.)
+</th>
+<th align=left width=30%>
+./genModel fileName
+</th>
+</tr>
+
+<tr>
+<th align=left width=70%>
+Construct generators for ALL symmetries for 4-way tables and put them into "fileName.sym".<br> 
+(Hint: Use c=d=1 and d=1 for 2- and 3-way tables.)
+</th>
+<th align=left width=30%>
+./genSymm a b c d fileName
+</th>
+</tr>
+
+<tr>
+<th align=left width=70%>
+Extract circuits from Graver basis.<p>
+
+<font color="red">Needs</font> "fileName.gra".
+</th>
+<th align=left width=30%>
+./circuits fileName
+</th>
+</tr>
+
+<tr>
+<th align=left width=70%>
+Compute (unweighted) Hilbert-Poincare' series of leading term ideal.<p>
+
+<font color="red">Needs</font> "fileName.gro".<p>
+
+This function is only available for linux at the moment.<br> 
+It is only a first and rough implementation to provide the 
+functionality in 4ti2.
+</th>
+<th align=left width=30%>
+./output pos fileName.gro<p>
+./poincare fileName.gro.pos
+</th>
+</tr>
+
+<tr>
+<th align=left width=70%>
+Remove (most of the) computed files related to fileName.
+</th>
+<th align=left width=30%>
+./cleanup fileName<p>
+</th>
+</tr>
+</table>
+
+
+
+
+
+
+
+
+</center>
+
+
+
+</BODY>

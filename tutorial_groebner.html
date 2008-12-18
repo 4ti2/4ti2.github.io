@@ -1,0 +1,187 @@
+<HTML>
+<HEAD>
+<TITLE>4ti2 -- Computation of Hilbert bases, Graver bases, toric Gröbner bases, and more</TITLE>
+</HEAD>
+
+<BODY background="back.jpg"
+      bgcolor = "#EEEEFF"
+      TEXT=FFCC00
+      LINK=FFFFF
+      VLINK=#FFFCC
+      ALINK=#000066>
+
+<center>
+<table border=0 width=90% cellspacing=5 cellpadding=5>
+<tr>
+  <th>
+    <font size=6 color=red>4ti2 tutorial</font>
+  </th>
+</tr>
+</table>
+
+<table border=5 width=90% cellspacing=5 cellpadding=5>
+<tr>
+<th width=33%>
+<a href="tutorial_input.html">Input</a>
+</th>
+<th width=34%>
+<a href="tutorial_auxiliary.html">Auxiliary functions</a>
+</th>
+<th width=33%>
+<a href="tutorial_output.html">Output management</a>
+</th>
+</tr>
+</table>
+
+<table border=5 width=90% cellspacing=5 cellpadding=5>
+<tr>
+<th width=20%>
+<a href="tutorial_hilbert.html">Hilbert bases</a>
+</th>
+<th width=20%>
+<a href="tutorial_graver.html">Graver bases</a>
+</th>
+<th width=20%>
+<font color=red>Gröbner bases</font>
+</th>
+<th width=20%>
+<a href="tutorial_markov.html">Markov bases</a>
+</th>
+<th width=20%>
+<a href="tutorial_minimize.html">Minimization</a>
+</th>
+</tr>
+</table>
+
+<table border=5 width=90% cellspacing=5 cellpadding=5>
+<tr>
+<th>
+'groebner' computes Gröbner bases of graded lattice ideals of lattices L 
+given<br>
+as ker(A) for given matrix A<br>
+or<br>
+by lattice generators.<p>
+Returned is a degrevlex Gröbner basis with x[1]&lt;...&lt;x[n], unless cost vector is specified. 
+</th>
+</tr>
+</table>
+
+<table border=5 width=90% cellspacing=5 cellpadding=5>
+<tr>
+<th align=left width=70%>
+Gröbner basis from matrix<p>
+
+If present, lattice generators will be read automatically from
+"fileName.lat".<p>
+
+If present, cost vector will be read automatically from
+"fileName.cost".
+</th>
+<th align=left width=30%>
+./groebner fileName
+</th>
+</tr>
+</table>
+
+<table border=5 width=90% cellspacing=5 cellpadding=5>
+<tr>
+<th>
+The new 'groebner' is far more flexible than the one in version 1.1. You may
+call it also via:<p>
+
+./groebner [option] fileName<p>
+
+With no option set, 'groebner' behaves as in version 1.1. However, the
+new project-and-lift algorithm is used for the computation. For more details,
+please wait for the full release at the end of August 2005.<p>
+
+As options are possible:<p>
+
+<table border=5 width=90% cellspacing=5 cellpadding=5>
+<tr>
+<th align=left width=30%>
+--groebner
+</th>
+<th align=left width=70%>
+Compute a Groebner basis.
+</th>
+</tr>
+
+<tr>
+<th align=left width=30%>
+--saturation
+</th>
+<th align=left width=70%>
+Use the Saturation algorithm. 
+</th>
+</tr>
+
+<tr>
+<th align=left width=30%>
+--project-and-lift
+</th>
+<th align=left width=70%>
+Use the Project-and-Lift algorithm. 
+</th>
+</tr>
+
+<tr>
+<th align=left width=30%>
+--normal
+</th>
+<th align=left width=70%>
+Use the straight-forward completion procedure. 
+</th>
+</tr>
+
+<tr>
+<th align=left width=30%>
+--graded
+</th>
+<th align=left width=70%>
+Use the graded completion procedure. 
+</th>
+</tr>
+
+<tr>
+<th align=left width=30%>
+--gebauer-moeller
+</th>
+<th align=left width=70%>
+Use the Gebauer and Moeller criteria. 
+</th>
+</tr>
+
+<tr>
+<th align=left width=30%>
+--auto-reduce-freq=n
+</th>
+<th align=left width=70%>
+Set the frequency of auto reduction to 'n' iterations.
+</th>
+</tr>
+</table>
+
+<tr>
+<th align=left width=30%>
+--silent
+</th>
+<th align=left width=70%>
+Surpresses all output.
+</th>
+</tr>
+</th>
+</tr>
+</table>
+
+<table border=0 width=90% cellspacing=5 cellpadding=5>
+<tr>
+<th align=right>
+<a href="http://www.4ti2.de">back to www.4ti2.de</a>
+</th>
+</tr>
+</table>
+</center>
+
+
+</BODY>

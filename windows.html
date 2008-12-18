@@ -1,0 +1,180 @@
+<HTML>
+<HEAD>
+<TITLE>4ti2 -- A software package for algebraic, geometric and combinatorial problems
+on linear spaces</TITLE>
+</HEAD>
+
+<BODY bgcolor = white>
+
+<center>
+<table border=0 width=90% cellspacing=5 cellpadding=5>
+<tr>
+  <th>
+    <font size=6>Windows user</font>
+  </th>
+</tr>
+</table>
+</center>
+
+We have not yet implemented scripts like 'graver', 'hilbert' or 'groebner' for Windows machines that call the appropriate functions with the appropriate options. Hence, instead of using these short cuts, you still need to do that on your own. Please find below a little dictonary of what you should call instead of the short cuts.<p>
+
+Replace '4ti2int32' by '4ti2int64' or '4ti2gmp' if you need a higher precision. Note that 'zsolve', and hence also 'hilbert' and 'graver' are currently only available using 32-bit integers.<p>
+
+
+<table border=1 width=90% cellspacing=5 cellpadding=5>
+<tr>
+<th align=left>
+Function
+</th>
+<th align=left>
+Invocation on Windows machines
+</th>
+</tr>
+
+<tr>
+<th align=left>
+./circuits foo
+</th>
+<th align=left>
+./4ti2int32 circuits foo
+</th>
+</tr>
+
+<tr>
+<th align=left>
+./genmodel foo
+</th>
+<th align=left>
+./genmodel foo
+</th>
+</tr>
+
+<tr>
+<th align=left>
+./gensymm x y z u
+</th>
+<th align=left>
+./gensymm x y z u
+</th>
+</tr>
+
+<tr>
+<th align=left>
+./graver foo
+</th>
+<th align=left>
+./zsolve -G foo
+</th>
+</tr>
+
+<tr>
+<th align=left>
+./groebner foo
+</th>
+<th align=left>
+./4ti2int32 groebner foo
+</th>
+</tr>
+
+<tr>
+<th align=left>
+./hilbert foo
+</th>
+<th align=left>
+./zsolve -H foo
+</th>
+</tr>
+
+<tr>
+<th align=left>
+./markov foo
+</th>
+<th align=left>
+./4ti2int32 markov foo
+</th>
+</tr>
+
+<tr>
+<th align=left>
+./minimize foo
+</th>
+<th align=left>
+./4ti2int32 minimize foo
+</th>
+</tr>
+
+<tr>
+<th align=left>
+./normalform foo
+</th>
+<th align=left>
+./4ti2int32 normalform foo
+</th>
+</tr>
+
+<tr>
+<th align=left>
+./output --option foo
+</th>
+<th align=left>
+./output --option foo
+</th>
+</tr>
+
+<tr>
+<th align=left>
+./ppi n
+</th>
+<th align=left>
+./ppi n
+</th>
+</tr>
+
+<tr>
+<th align=left>
+./qsolve foo
+</th>
+<th align=left>
+./4ti2int32 qsolve foo
+</th>
+</tr>
+
+<tr>
+<th align=left>
+./rays foo
+</th>
+<th align=left>
+./4ti2int32 rays foo
+</th>
+</tr>
+
+<tr>
+<th align=left>
+./walk foo
+</th>
+<th align=left>
+./4ti2int32 walk foo
+</th>
+</tr>
+
+<tr>
+<th align=left>
+./zbasis foo
+</th>
+<th align=left>
+./4ti2int32 zbasis foo
+</th>
+</tr>
+
+<tr>
+<th align=left>
+./zsolve foo
+</th>
+<th align=left>
+./zsolve foo
+</th>
+</tr>
+</table>
+
+
+</BODY>

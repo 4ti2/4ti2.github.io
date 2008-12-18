@@ -1,0 +1,119 @@
+<HTML>
+<HEAD>
+<TITLE>4ti2 -- A software package for algebraic, geometric and combinatorial problems
+on linear spaces</TITLE>
+</HEAD>
+
+<BODY bgcolor = white>
+
+<center>
+<table border=0 width=90% cellspacing=5 cellpadding=5>
+<tr>
+  <th>
+    <font size=6>markov</font>
+  </th>
+</tr>
+</table>
+</center>
+
+This code computes a <b>minimal</b> generating set 
+
+<ul>
+<li> of the toric ideal of a matrix A or
+<li> of the lattice ideal of a lattice L.
+</ul>
+
+You must specify either a matrix or a lattice basis. If both exist,
+'markov' will choose the matrix as input.<p>
+
+See
+
+<ul>
+<li> A.M. Bigatti and R. LaScala and L. Robbiano. Computing toric
+     ideals. Journal of Symbolic Computation 27 (1999), 351--365.
+<li> R. Gebauer and H. M. M&ouml;ller. On an installation of
+     Buchberger's algorithm. Journal of Symbolic Computation 6 (1988),
+     275--286. 
+<li> R. Hemmecke and P. Malkin. Computing generating sets of lattice
+ideals. e-print arXiv:math.CO/0508359, 2005. 
+<li> S. Hosten and B. Sturmfels. GRIN: An implementation of
+     Gr&ouml;bner bases for integer program- ming. In: "Integer
+     programming and combinatorial optimisation", E. Balas and
+     J. Clausen, eds., LNCS 920, Springer-Verlag, 1995, 267--276.
+</ul>
+
+for more details on the algorithms implemented.<p>
+
+
+<b>Usage</b>
+
+<pre>
+./markov [--options] foo
+</pre>
+<p>
+
+<b>Examples</b>
+
+<pre>
+./markov foo
+./markov --quiet foo
+</pre>
+<p>
+
+<b>Default behavior</b>
+
+<ul>
+<li> 'markov' always uses matrix file 'foo' as input if present. If you wish to
+use a given lattice basis as input, specify only the lattice generators in 'foo.lat'.
+</ul>
+<p>
+
+<table border=1 width=90% cellspacing=5 cellpadding=5>
+<tr>
+<th align=left>
+Option<br>
+(not on SUN)
+</th>
+<th align=left>
+Short-hand<br>
+(also on SUN)
+</th>
+<th align=left>
+Effect
+</th>
+</tr>
+
+<tr>
+<th align=left>
+--quiet
+</th>
+<th align=left>
+-q
+</th>
+<th align=left>
+no output is written to the screen
+</th>
+</tr>
+</table>
+
+<table border=1 width=90% cellspacing=5 cellpadding=5>
+<tr>
+<th align=left>
+Output file
+</th>
+<th align=left>
+Content
+</th>
+</tr>
+
+<tr>
+<th align=left>
+foo.mar
+</th>
+<th align=left>
+list of Markov basis elements
+</th>
+</tr>
+</table>
+
+</BODY>
