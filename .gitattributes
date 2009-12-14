@@ -2,6 +2,10 @@
 /4ti2_manual.pdf -text
 /IMA_25Oct2006.pdf -text
 /Tutorial-Problems.pdf -text
+articles/data/32x80.gro.gz -text
+articles/data/32x80.mar.gz -text
+articles/data/3cex.html -text
+articles/data/index.html -text
 /back.jpg -text
 examples/333 -text
 examples/333.mod -text
@@ -46,7 +50,15 @@ version_1.0/4ti2_sun_1.0.tar.gz -text
 version_1.0/graver -text
 version_1.0/groebner -text
 version_1.0/hilbert -text
+version_1.0/linux/graver -text
+version_1.0/linux/groebner -text
+version_1.0/linux/hilbert -text
+version_1.0/linux/output -text
 version_1.0/output -text
+version_1.0/sun/graver -text
+version_1.0/sun/groebner -text
+version_1.0/sun/hilbert -text
+version_1.0/sun/output -text
 version_1.1/4ti2_linux_1.1.tar.gz -text
 version_1.1/4ti2_sun_1.1.tar.gz -text
 version_1.1/full_4ti2_linux_1.1.tar.gz -text
