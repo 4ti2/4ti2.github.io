@@ -9,15 +9,19 @@
 <table border=0 width=90% cellspacing=5 cellpadding=5>
 <tr>
   <th>
-    <font size=6>Data structure</font>
+    <font size=6>Data format</font>
   </th>
 </tr>
 </table>
 </center>
 
-The main concept of 4ti2 remains the same: a project is defined via a file 
-'foo' containing the problem matrix. Related sets such as Graver basis 
-or Markov basis are put into 'foo.gra' and 'foo.mar', respectively.<p>
+The interface of 4ti2 is minimalistic: A project is defined via a set
+of text files with the same basename and different extensions, most
+importantly the file 'foo.mat' containing the problem matrix.  Each of
+the files has a very simple format,
+
+Computed sets such as a Graver basis or a Markov basis are then written
+into files 'foo.gra' and 'foo.mar', respectively.<p>
 
 Input files and output files usually contain a matrix or a list of
 vectors (written as a matrix) in a standard encoding such as<br>
