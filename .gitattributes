@@ -7,6 +7,7 @@ articles/data/32x80.mar.gz -text
 articles/data/3cex.html -text
 articles/data/index.html -text
 /back.jpg -text
+/circuits.html -text
 examples/333 -text
 examples/333.mod -text
 examples/334 -text
@@ -45,6 +46,18 @@ examples/magic5x5 -text
 examples/magic6x6 -text
 examples/s-magic3 -text
 examples/twistedCubic -text
+/genmodel.html -text
+/gensymm.html -text
+/graver.html -text
+/groebner.html -text
+/hilbert.html -text
+/markov.html -text
+/minimize.html -text
+/normalform.html -text
+/output.html -text
+/ppi.html -text
+/qsolve.html -text
+/rays.html -text
 version_1.0/4ti2_linux_1.0.tar.gz -text
 version_1.0/4ti2_sun_1.0.tar.gz -text
 version_1.0/graver -text
@@ -84,3 +97,6 @@ version_1.6.1/4ti2-1.6.1.tar.gz -text
 version_1.6.2/4ti2-1.6.2.tar.gz -text
 version_1.6.3/4ti2-1.6.3.tar.gz -text
 version_1.6/4ti2-1.6.tar.gz -text
+/walk.html -text
+/zbasis.html -text
+/zsolve.html -text
