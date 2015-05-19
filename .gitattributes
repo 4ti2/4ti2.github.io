@@ -1,6 +1,7 @@
 * text=auto !eol
 /4ti2_manual.pdf -text
 /IMA_25Oct2006.pdf -text
+/MO14_sm.jpg -text
 /Tutorial-Problems.pdf -text
 articles/data/32x80.gro.gz -text
 articles/data/32x80.mar.gz -text
